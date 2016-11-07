@@ -5,7 +5,7 @@
  */
 
  body {
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     padding-top:50px;
 }
 
@@ -53,23 +53,6 @@ p.switch {
   margin-bottom: 10px;
   font-size: 24px;
   text-align: center;
-}
-
-/*p.center {
-    font-family: "Noto Sans"; 
-    font-size: 14px;
-    text-align:center;
-    line-height:150%;
-}*/
-a,
-a:hover
-a:focus,
-a:active,
-a.active {
-    font-family: "Noto Sans";
-    outline: 0;
-    color: #f8f8f8;
-
 }
 
 @font-face {
