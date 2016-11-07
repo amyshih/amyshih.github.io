@@ -1,3 +1,17 @@
+header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/cover_pic6.png"');
+  text-align: center;
+  color: white;
+}
+
 .timeline {
     list-style: none;
     padding: 20px 0 20px;
@@ -117,7 +131,7 @@
 }
 
 .timeline-badge.success {
-    background-color: #3f903f !important;
+    background-color: #00AAAA !important;
 }
 
 .timeline-badge.warning {
@@ -145,8 +159,14 @@
     .timeline-body > p + p {
         margin-top: 10px;
     }
+
+
+
     
 @media (max-width: 767px) {
+    header {
+        min-height: 100%;
+      }
     ul.timeline:before {
         left: 40px;
     }
@@ -181,3 +201,4 @@
             right: auto;
         }
 }
+    

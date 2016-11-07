@@ -1,11 +1,11 @@
-/*!
- * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'), local('NotoSans'), url(http://themes.googleusercontent.com/static/fonts/notosans/v1/LeFlHvsZjXu2c3ZRgBq9nLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
 
- body {
-    /*overflow-x: hidden;*/
+body {
     padding-top:50px;
 }
 
@@ -55,16 +55,8 @@ p.switch {
   text-align: center;
 }
 
-@font-face {
-  font-family: 'Noto Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Noto Sans'), local('NotoSans'), url(http://themes.googleusercontent.com/static/fonts/notosans/v1/LeFlHvsZjXu2c3ZRgBq9nLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
-}
 
-h1,
-
-h6 {
+h1{
     text-transform: uppercase;
     font-family: "Noto Sans", Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 500;
@@ -82,7 +74,6 @@ h2,h3,h5
     text-transform: uppercase;
     font-family: "Noto Sans", Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 500;
-    /*text-align: center;*/
 }
 
 ul,li {
@@ -90,7 +81,7 @@ ul,li {
     font-family: "Noto Sans", Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 500;
     margin-top: 0.5em;
-    margin-bottom: 0.5 em;
+    margin-bottom: 0.5em;
     padding-left: 5px;
     text-align: left;
 }
@@ -102,6 +93,7 @@ hr.star-light{
     border: 0;
     border-top: solid 2px;
     text-align: center;
+    border-color: #2c3e50;
 }
 hr.star-primary {
     margin: 20px auto 30px;
@@ -110,36 +102,7 @@ hr.star-primary {
     border: 0;
     border-top: solid 2px;
     text-align: center;
-}
-
-
-hr.star-light:after,
-hr.star-primary:after {
-   /* content: "\f111";
-    display: inline-block;
-    position: relative;
-    top: -.8em;
-    padding: 0 .25em;
-    font-family: "Noto Sans", FontAwesome;
-    font-size: 2em;*/
-}
-
-hr.star-light {
     border-color: #2c3e50;
-}
-
-hr.star-light:after {
-    color: #2c3e50;
-    background-color: #f8f8f8;
-}
-
-hr.star-primary {
-    border-color: #2c3e50;
-}
-
-hr.star-primary:after {
-    color: #2c3e50;
-    background-color: #f8f8f8;
 }
 
 .img-centered {
@@ -147,83 +110,14 @@ hr.star-primary:after {
 }
 
 
-
-header {
-    text-align: center;
-    color: #f8f8f8;
-    /*background: #f8f8f8;*/
-/*    background-image:  url("cover4.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 750px;*/
-}
-
-header .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-header img {
-   /* display: block;
-   margin: 0 auto 0px;*/
-}
-
-header .intro-text .name {
-    display: block;
-    text-transform: uppercase;
-    font-family: "Noto Sans", Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: right;
-}
-
-header .intro-text .skills {
-    display: block;
-    text-transform: uppercase;
-    font-size: 1.25em;
-    font-weight: 300;
-    text-align: right;
-}
-
-@media(min-width:768px) {
-    header .container {
-        padding-top: 200px;
-        padding-bottom: 100px;
-    }
-
-    header .intro-text .name {
-        font-size: 4.75em;
-    }
-
-    header .intro-text .skills {
-        font-size: 1.75em;
-    }
-}
-
-@media(min-width:768px) {
-    .navbar-fixed-top {
+@media(min-width:769px) {
+.navbar-fixed-top {
         padding: 25px 25px;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
     }
 
-    .navbar-fixed-top .navbar-brand {
-        font-size: 2.1em;
+.navbar-fixed-top .navbar-brand {
+        font-size: 35px;
         padding:10px 0px;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
-    }
-
-    .navbar-fixed-top.navbar-shrink {
-        padding: 20px 25px;
-    }
-
-    .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
-        padding:15px 0px;
     }
 }
 
@@ -233,22 +127,13 @@ header .intro-text .skills {
     font-weight: 500;
 }
 
-.navbar a:focus {
-    outline: 0;
-}
-
 .navbar .navbar-nav {
     letter-spacing: 1px;
-}
-
-.navbar .navbar-nav li a:focus {
-    outline: 0;
 }
 
 .navbar-default,
 .navbar-inverse {
     border: 0;
-    /*background-color: rgba(44,62,80,0.75);*/
     height: 90px;
 
 }
@@ -257,13 +142,12 @@ header .intro-text .skills {
 section {
     padding: 100px 0;
     background-color: #f8f8f8;
-    /*background-image: url("cover_pic6.png");*/
 }
 }
 
 section h2 {
     margin: 0;
-    font-size: 3em;
+    font-size: 48px;
 }
 
 section.success {
@@ -271,21 +155,12 @@ section.success {
     background: #f8f8f8;
 }
 
-section.success a,
-section.success a:hover,
-section.success a:focus,
-section.success a:active,
-section.success a.active {
-    outline: 0;
-    color: #f8f8f8;
-}
-
 @media(max-width:768px) {
-    section {
+section {
         padding: 40px 0;
     }
-
-    section.first {
+/*hover and see the word*/
+section.first {
         padding-top: 75px;
     }
 }
@@ -332,7 +207,6 @@ section.success a.active {
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
     margin-top: -12px;
 }
-
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
     margin: 0;
@@ -344,15 +218,10 @@ section.success a.active {
 }
 
 @media(min-width:767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
-    }
-}
 
 .btn-outline {
-    margin-top: 15px;
+    
     border: solid 2px #fff;
-    font-size: 20px;
     color: #fff;
     background: 0 0;
     transition: all .3s ease-in-out;
@@ -363,91 +232,10 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
-    background: #fff;
+    color: #003C9D;
+    background: #CCEEFF;
 }
 
-.floating-label-form-group {
-    position: relative;
-    margin-bottom: 0;
-    padding-bottom: .5em;
-    border-bottom: 1px solid #eee;
-}
-
-.floating-label-form-group input,
-.floating-label-form-group textarea {
-    z-index: 1;
-    position: relative;
-    padding-right: 0;
-    padding-left: 0;
-    border: 0;
-    border-radius: 0;
-    font-size: 1.5em;
-    background: 0 0;
-    box-shadow: none!important;
-    resize: none;
-}
-
-.floating-label-form-group label {
-    display: block;
-    z-index: 0;
-    position: relative;
-    top: 2em;
-    margin: 0;
-    font-size: .85em;
-    line-height: 1.764705882em;
-    vertical-align: middle;
-    vertical-align: baseline;
-    opacity: 0;
-    -webkit-transition: top .3s ease,opacity .3s ease;
-    -moz-transition: top .3s ease,opacity .3s ease;
-    -ms-transition: top .3s ease,opacity .3s ease;
-    transition: top .3s ease,opacity .3s ease;
-}
-
-.floating-label-form-group::not(:first-child) {
-    padding-left: 14px;
-    border-left: 1px solid #eee;
-}
-
-.floating-label-form-group-with-value label {
-    top: 0;
-    opacity: 1;
-}
-
-.floating-label-form-group-with-focus label {
-    color: #f8f8f8;
-}
-
-form .row:first-child .floating-label-form-group {
-    border-top: 1px solid #eee;
-
-}
-
-footer {
-    color: #fff;
-}
-
-footer h2 {
-    margin-top: 40px;
-    text-align: center;
-}
-
-footer .footer-above {
-    padding-top: 20px;
-    background-color: #2c3e50;
-    text-align: center;
-}
-
-/*footer .footer-col {
-    margin-bottom: 20px;
-    vertical-align: center;
-}*/
-
-footer .footer-below {
-    padding: 25px 0;
-    background-color: #2c3e50;
-}
 
 .btn-social {
     display: inline-block;
@@ -457,7 +245,7 @@ footer .footer-below {
     border: 2px solid #fff;
     border-radius: 100%;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 45px;
 }
 
@@ -466,6 +254,24 @@ footer .footer-below {
 .btn.active {
     outline: 0;
 }
+
+footer {
+    color: #fff;
+}
+
+
+footer .footer-above {
+    padding-top: 20px;
+    background-color: #2c3e50;
+    text-align: center;
+}
+
+
+footer .footer-below {
+    padding: 25px 0;
+    background-color: #2c3e50;
+}
+
 
 .scroll-top {
     z-index: 1049;
