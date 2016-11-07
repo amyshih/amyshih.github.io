@@ -169,7 +169,7 @@ header {
       }
     /*relocate the gray line*/
     ul.timeline:before {
-        left: 40px;
+        left: 50px;
     }
     
     /* relocate the circle icon*/
@@ -185,7 +185,7 @@ header {
         width: -moz-calc(100% - 90px);
         width: -webkit-calc(100% - 90px);
     }
-    
+
     /*make sure all of the panel float to right*/
     ul.timeline > li > .timeline-panel {
         float: right;
