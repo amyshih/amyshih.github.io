@@ -13,9 +13,9 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/home/cover_white.jpg');
+  background-image: url('../img/home/cover_white_long.jpg');
   text-align: center;
-  color: white;
+  color: #2C3E50;
 }
 header .header-content {
   position: relative;
@@ -50,6 +50,7 @@ header .header-content {
   color:#2C3E50;
 }
 
+
 .no-padding {
   padding: 0;
 }
@@ -64,8 +65,8 @@ header .header-content {
   color: white;
   opacity: 0;
   display: block;
-  /*這裡改hover顏色*/
-  background: rgba(240, 95, 64, 0.9);
+  /*hover color*/
+  background: rgba(220, 20, 60, 0.7);
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -89,10 +90,14 @@ header .header-content {
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
+  color:#DDDDDD;
+  padding-bottom: 10px;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  text-transform: uppercase;
+  font-weight: 600;
   font-size: 18px;
 }
 .portfolio-box:hover .portfolio-box-caption {
